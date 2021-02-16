@@ -1,0 +1,747 @@
+:root{
+    font-family:  cursive;
+    font-size:  17px;
+}
+html{
+    scroll-behavior:  smooth;
+}
+*{margin: 0; padding:  0; box-sizing: border-box;}
+
+/* cabecera logo */
+header.top{
+    width: 100vw;
+    max-width:  100%;
+    height:  8vh;
+    background-color:  #00c4cc;
+
+    display:  flex;
+    justify-content:  flex-start;
+}
+header.top > div{
+    width:  auto;
+    min-width:  15%;
+    height:  auto;
+    min-height:  8%;
+    margin-left:  5%;
+}
+header.top > div > img{
+    width:  auto;
+    height:  100%;
+}
+
+/***************************** section contenedor************************************** */
+section.container{
+    width: 100vw;
+    max-width:  100%;
+    
+    height:  calc(100vh - 8vh);
+
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+    position: relative;
+
+    display: flex;
+    flex-flow: column;   
+    justify-content: space-between;
+
+}
+/********************* titulo principal ********************************************** */
+section.container > header{
+    width: 100%;
+    height:  5em;
+    position: absolute;
+    top:  15%;
+    text-align: center;
+}
+header > h1{
+    /* color:  #026c72; */
+    color:  #04a5ad;
+    font-size: 5rem;
+    font-weight: lighter;
+}
+header > p{
+    color:  #720a02;
+    font-family: 'Amatic SC', cursive;
+    font-size:  2rem;
+    font-weight:  900;
+}
+
+/* ************************  div slider ************************************************ */
+div.container-slider{
+    width: 100%;
+    height:  50%;
+    overflow: hidden;
+}
+div.slider{
+    width: 100%;
+    height:  100%;
+    z-index: -1;
+    /* flex */
+    display:  flex;
+    /* animation */
+    -webkit-animation:  slider 20s ease-in infinite alternate backwards;
+    -moz-animation:  slider 20s ease-in infinite alternate backwards;
+    -o-animation:  slider 20s ease-in infinite alternate backwards;
+    animation:  slider 20s ease-in infinite alternate backwards;
+}
+div.slider > div{
+    min-width:  100%;
+    height:  100%;
+    
+    /* filter: blur(2px); */
+}
+
+div.slider > div.uno{
+    background-image: url("../img/1.jpg");
+    background-repeat:  no-repeat;
+    background-size:  cover;
+    background-position:  center;
+    opacity:  .3;
+    filter: blur(5px);
+    z-index:  -1;
+}
+div.slider > div.dos{
+    background-image: url("../img/2.jpg");
+    background-repeat:  no-repeat;
+    background-size:  cover;
+    background-position:  center;
+    opacity:  .3;
+    filter: blur(5px);
+    z-index:  -1;
+}
+div.slider > div.tres{
+    background-image: url("../img/3.jpg");
+    background-repeat:  no-repeat;
+    background-size:  cover;
+    background-position:  center;
+    opacity:  .3;
+    filter: blur(5px);
+    z-index:  -1;
+}
+div.slider > div.cuatro{
+    background-image: url("../img/4.jpg");
+    background-repeat:  no-repeat;
+    background-size:  cover;
+    background-position:  center;
+    opacity:  .3;
+    filter: blur(5px);
+    z-index:  -1;
+}
+/* *******************    links *****************************************   */
+article.links{
+    width: 100%;
+    height: auto;
+    margin-bottom:  10%;
+    display:  flex;
+    flex-flow: wrap;
+}   
+article.links > div{
+    flex: 1 1 auto;
+    text-align: center;
+    padding:  1%;
+    /* flex */
+    display:  flex;
+    flex-flow:  column ;
+    justify-content: center;
+    align-items: center;
+}
+
+article.links > div h2{
+    font-size:  3em;
+    color:  #026c72;
+}
+article.links > div h3{
+    font-size:  2.5em;
+    transition:  transform .5s ease;
+}
+article.links > div h3 > a{
+    color:  rgba(114, 10, 2, 0.8);
+    text-decoration: none;
+}
+article.links div h3:hover{
+    transform:  scale(1.2);
+}
+article.links > div p{
+    font-size:  1.5em;
+    color:  rgba(114, 10, 2, 0.8);
+}
+
+/************************* animación************************* */
+@keyframes slider{
+    0%{
+        margin-left:  0%;
+    }
+    10%{
+        margin-left:  0%;
+    }
+    
+    15%{
+        margin-left:  -100%;
+    }
+    40%{
+        margin-left:  -100%;
+    }
+    45%{
+        margin-left:  -200%;
+    }
+    75%{
+        margin-left:  -200%;
+    }
+    80%{
+        margin-left:  -300%;
+    }
+    100%{
+        margin-left:  -300%;
+    }
+}/* ************************* fin de la animación **************************************** */
+
+/* ----------------------- FORMULARIO CONTACTO ---------------------- */
+section.contact{
+    width:  100vw;
+    max-width:  100%;
+    height:  100vh;
+    background-color:  #fafafa;
+
+}
+section.contact > div.form{
+    width:  100%;
+    height:  100%;
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+}
+section.contact > div.form > form{
+    width:  40%;
+    height:  60%;
+    border:  1px solid #00c4cc;
+    background-color:  white;
+    padding:  1%;
+}
+div.form > form > header{
+    width:  100%;
+    height:  auto;
+    text-align:  center;
+}
+div.form > form > header h2{
+    font-family: 'Amatic SC', cursive;
+    font-size:  3rem;
+    color:  rgba(114, 10, 2, 0.8);
+}
+div.form > form > header hr{
+    width:  8%;
+    height:  3px;
+    margin:  2% auto 0;
+    border:  none;
+    background-color:  #00c4cc;
+}
+div.form > form > header p{
+    margin-top:  3%;
+}
+div.form > form > div.form-body{
+    width:  100%;
+    height:  calc(100% - 164px);
+    padding:  1%;
+
+    display:  flex;
+    flex-direction:  column;
+    justify-content:  center;
+}
+form > div.form-body >div.input{
+    width:  100%;
+    height:  80%;
+    display:  flex;
+    flex-direction: column;
+    justify-content:  center;
+}
+form > div.form-body >div.input input{
+    width:  100%;
+    height:  15%;
+    background-color:  #fafafa;
+    border: none;
+    padding:  1%;
+}
+form > div.form-body >div.input textarea{
+    margin-top:  1%;
+    background-color:  #fafafa;
+    border: none;
+    padding:  1%;
+    min-width:  100%;
+    max-width:  100%;
+    min-height:  80%;
+    max-height:  80%;
+}
+form > div.form-body >div.input input::placeholder, textarea::placeholder{
+    font-family: 'Amatic SC', cursive;
+    font-size:  1.5em;
+}
+form > div.form-body >div.input input[type="button"]{
+    margin-top:  1%;
+    border:  1px solid #00c4cc;
+    background-color:  white;
+    cursor: pointer;
+    font-family: 'Amatic SC', cursive;
+    font-size:  1.5em;
+    color:  #00c4cc;
+}
+div.form-body >div.input input[type="button"]:hover{
+    background-color:  #00c4cc;
+    color:  white;
+}
+form > div.form-body >div.input input:focus{
+    border: 1px solid rgba(250, 250, 250, .5);
+}
+
+/* ------------------------     section gallery --------------------------------------------- */
+section.gallery{
+    width:  100vw;
+    max-width:  100%;
+    height:  auto;
+    /* min-height:  auto; */
+    min-height:  100vh;
+}
+section.gallery > div.gallery{
+    width:  100%;
+    height:  100%;
+    max-height:  100%;
+    padding-top:  5%;
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+}
+section.gallery > div.gallery > div.gallery-content{
+    width:  70%;
+    height:  80%;
+
+}
+section.gallery > div.gallery > div.gallery-content header{
+    width:  100%;
+    height:  auto;
+    text-align:  center;
+}
+section.gallery > div.gallery > div.gallery-content header hr{
+    width:  8%;
+    height:  3px;
+    margin:  2% auto 0;
+    border:  none;
+    background-color:  #00c4cc;
+}
+section.gallery > div.gallery > div.gallery-content header h2{
+    font-family: 'Amatic SC', cursive;
+    font-size:  3rem;
+    color:  rgba(114, 10, 2, 0.8);
+}
+section.gallery > div.gallery > div.gallery-content header p{
+    margin-top:  3%;
+}
+section.gallery > div.gallery > div.gallery-content > div.gallery-body{
+    width:  100%;
+    height:  calc(100% - 164px);
+    padding:  1%;
+
+    display:  flex;
+    flex-direction:  column;
+    flex-wrap:  wrap;
+    justify-content:  center;
+}
+div.gallery-content > div.gallery-body > div.images{
+    width:  100%;
+    height:  100%;
+    
+
+    display:  flex;
+    flex-direction:  row;
+    flex-wrap:  wrap;
+    justify-content:  center;
+}
+div.images > div.img{
+    height:  auto;
+    max-height:  100%;
+    flex:  0 1 300px;
+    margin: 1%;
+    margin-bottom:  15%;
+}
+div.images > div.img > figure{
+    width:  100%;
+    height:  100%;
+    max-height:  100%;
+
+}
+div.img > figure img{
+    width:  100%;
+    max-height:  100%;
+    height:  100%;
+}
+div.img > figure figcaption{
+    font-family: 'Amatic SC', cursive;
+    font-size:  1.2rem;
+    text-align: center;
+    font-weight:  bold;
+}
+div.img > figure p{
+    text-align:  center;
+    font-family: 'Amatic SC', cursive;
+    font-size:  1.3rem;
+    font-weight:  bold;
+    color:  rgba(114, 10, 2, 0.8);
+}
+div.images > div.img:hover{
+    box-shadow:  5px 5px 20px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+/* ----------------- section blog --------------------------------------------- */
+section.blog{
+    width:  100vw;
+    max-width:  100%;
+    min-width:  100%;
+
+    background-image:  url("../img/background-blur.jpg");
+    background-position: center;
+    background-size:  cover;
+
+    height:  auto;
+    max-height:  auto;
+    min-height:  100vh;
+
+    padding-top:  5%;
+}
+section.blog > div.blog{
+    width:  100%;
+    height:  100%;
+
+
+}
+div.blog > header{
+    width:  100%;
+    height:  auto;
+    text-align:  center;
+}
+div.blog > header hr{
+    width:  8%;
+    height:  3px;
+    margin:  2% auto 0;
+    border:  none;
+    background-color:  #00c4cc;
+}
+div.blog > header h2{
+    font-family: 'Amatic SC', cursive;
+    font-size:  3rem;
+    color:  rgba(114, 10, 2, 0.8);
+}
+div.blog > header p{
+    margin-top:  3%;
+}
+
+div.blog > div.gallery-content{
+    width:  100%;
+    height:  100%;
+    
+}
+/* blog body */
+div.blog > div.blog-body{
+    margin:  0 auto;
+    width:  80%;
+    max-height:  auto;
+
+    display:  flex;
+    flex-flow:  row wrap;
+    justify-content:  center;
+
+}
+div.blog-body > div.img{
+    flex: 1 1 300px;
+    margin:  1%;
+
+}
+div.blog-body > div.img figure {
+    width:  100%;
+    height:  auto;
+    
+    overflow: hidden;
+}
+div.img figure img{
+    width:  100%;
+    height:  100%;
+    transition:  transform .2s linear;
+    -webkit-transition:  transform .2s linear;
+    -moz-transition:  transform .2s linear;
+}
+div.blog > div.blog-body > div.img > figure input{
+    width:  100%;
+    height:  3em;
+    background-color:  transparent;
+    border:  none;
+    border-bottom:  1px solid rgba(128, 128, 128, .4);
+}
+div.blog > div.blog-body > div.img > figure figcaption{
+    font-family: 'Amatic SC', cursive;
+    font-size:  1.2rem;
+    text-align: center;
+    font-weight:  bold;
+}
+div.blog > div.blog-body > div.img > figure input::placeholder{
+    font-family: 'Amatic SC', cursive;
+    font-size:  1.5em;
+    font-weight:  bold;
+}
+div.img > figure input:focus{
+    outline: none;
+}
+div.blog > div.blog-body > div.img figure img:hover{
+    transform:  scaleX(1.1);
+    -webkit-transform:  scaleX(1.1);
+    -moz-transform:  scaleX(1.1);
+    -ms-transform:  scaleX(1.1);
+    cursor: pointer;
+}
+
+/* section sobre nosotros  */
+section.about{
+    width:  100vw;
+    max-width:  100%;
+
+    height:  100vh;
+    padding-top:  5%;
+}
+section.about > div.about{
+    width:  80%;
+    height:  100%;
+    margin:  auto;
+}
+div.about > header{
+    width:  100%;
+    height:  auto;
+    text-align:  center;
+}
+div.about > header hr{
+    width:  8%;
+    height:  3px;
+    margin:  2% auto 0;
+    border:  none;
+    background-color:  #00c4cc;
+}
+div.about > header h2{
+    font-family: 'Amatic SC', cursive;
+    font-size:  3rem;
+    color:  rgba(114, 10, 2, 0.8);
+}
+div.about > header p{
+    margin-top:  3%;
+}
+div.about > div.about-content{
+    width:  100%;
+    height:  80%;
+    max-height:  auto;
+    display: flex;
+    flex-flow:  wrap;
+    justify-content:  space-around;
+}
+div.about > div.about-content > div.item-content{
+    flex: 1 1 40%;
+    margin:  1%;
+    max-height:  auto;
+    position:  relative;
+
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    padding-bottom:  5%;
+}
+div.about-content > div.item-content > p{
+    color:rgba(114, 10, 2, 0.8);
+    line-height:  3;
+}
+div.about-content > div.item-content > div.img{
+    width:  100%;
+    height:  100%;
+    position:  absolute ;
+    top:  0;
+    display:  flex ;
+    flex-direction:  column;
+    justify-content:  center;
+    align-items:  center;
+}
+div.about-content > div.item-content > img{
+    width:  40%;
+    height:  auto;
+}
+div.botones{
+    width:  100%;
+    height:  auto;
+
+    display:  flex;
+    justify-content: center;
+    align-items:  center;
+}
+div.botones > a:first-child{
+    background-color:   #00c4cc;
+}
+div.botones > a{
+    text-decoration:  none;
+    text-align:  center;
+    background-color: rgba(114, 10, 2, 0.8);
+    color:  white;
+    font-family: 'Amatic SC', cursive;
+    font-size:  1.3rem;
+    width:  5em;
+    height:  2em;
+    margin:  3%;
+    border:  none;
+    border-radius:  .3em;
+    padding-top:  1%;
+}
+div.botones > a:hover{
+    opacity:  .8;
+}
+div.buttons > input[type="button"]:hover{
+    opacity:  .7;
+    border:  1px solid rgba(128, 128, 128 .5);
+}
+div.buttons > a:hover{
+    opacity:  .7;
+}
+
+/* footer */
+footer{
+    width:  100vw;
+    max-width:  100%;
+
+
+    height:  auto;
+    background-color:  #00c4cc;
+    padding-top:  3%;
+    padding-bottom:  3%;
+}
+footer > div.social{
+    width:  80%;
+    height:  100%;
+    margin: auto;
+
+    display:  flex;
+    flex-flow:  column;
+}
+div.social > header.social{
+    width:  100%;
+}
+header.social > h3{
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size:  1.5em;
+}
+
+div.social > div.social-icons{
+    width:  100%;
+    height:  auto;
+    display:  flex;
+    flex-wrap:  wrap;
+    justify-content:  space-between;
+    align-items: center;
+}
+div.social-icons > div.icons{
+    width:  100%;
+    height:  100%;
+}
+div.icons > i{
+    margin:  1%;
+    font-size:  1.2em;
+    cursor:  pointer;
+}
+div.social-icons > div.correo{
+    width:  50%;
+    font-size:  1.2em;
+    cursor:  pointer;
+}
+
+
+div.social-icons > div.correo p, i{
+    color:  white;
+}
+/* ************* media queries ********************************************** */
+@media screen and (max-width: 1100px){
+    section.contact > div.form > form{
+        width:  50%;
+    }
+
+}
+/* @media screen and (max-width: 915px){
+    section.blog{
+        margin-top:  10vh;
+    }
+} */
+@media screen and (max-width: 900px){/* menos de 900 px */
+    header > h1{
+        font-size: 3.8rem;
+        font-weight: lighter;
+    }
+    header > p{
+        font-size:  1.5rem;
+        font-weight:  900;
+    }
+
+    /* formulario */
+    section.contact > div.form > form{
+        width:  60%;
+    }
+    
+    /* sobre nosotros */
+    div.about > div.about-content{
+        flex-direction:  column;
+    }
+    div.about > div.about-content > div.item-content:first-child{
+        display:  none;
+    }
+}
+
+@media screen and (max-width: 600px){/* menos de  600px */
+    header > h1{
+        font-size: 2.5rem;
+    }
+    header > p{
+        font-size:  1.5rem;
+    }
+   
+    article.links{
+        flex-direction: column;
+        width:  100%;
+    }
+    article.links > div h2{
+        font-size:  2.8em;
+    }
+    article.links > div h3{
+        font-size:  1.8em;
+    }
+   
+    article.links > div p{
+        font-size:  1em;
+    }
+
+    /* formulario de contacto */
+    section.contact > div.form > form{
+        width:  85%;/* 
+        font-size:  1.5em; */
+    }
+
+    /* div imagenes */
+    div.images > div.img{
+        margin-bottom:  20%;
+        padding:  1%;
+    }
+    div.images > div.img figure figcaption{
+        font-size:  1em;
+    }
+    div.images > div.img figure p{
+        font-size:  .8em;
+    }
+
+    /* correo footer */
+    div.icons{
+        width:  100%;
+    }
+    div.social-icons{
+        width:  100%;
+    }
+    div.social-icons > div.correo p, i{
+        font-size:  1em;
+    }
+}
+
