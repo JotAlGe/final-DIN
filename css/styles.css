@@ -55,9 +55,10 @@ section.container > header{
 }
 header > h1{
     /* color:  #026c72; */
-    color:  #04a5ad;
+    color:  rgb(4, 165, 173);
     font-size: 5rem;
     font-weight: lighter;
+    text-shadow: 0 0 15px rgba(4, 165, 173, .5), 0 0 10px rgba(4, 165, 173,.5);
 }
 header > p{
     color:  #720a02;
@@ -152,20 +153,22 @@ article.links > div h2{
 }
 article.links > div h3{
     font-size:  2.5em;
-    transition:  transform .5s ease;
+    transition:  transform .2s ease;
 }
 article.links > div h3 > a{
     color:  rgba(114, 10, 2, 0.8);
     text-decoration: none;
 }
 article.links div h3:hover{
-    transform:  scale(1.2);
+    transform:  scale(1.1);
 }
 article.links > div p{
     font-size:  1.5em;
     color:  rgba(114, 10, 2, 0.8);
 }
-
+article.links > div i{
+    color: #720a02;
+}
 /************************* animación************************* */
 @keyframes slider{
     0%{
