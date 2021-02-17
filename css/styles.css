@@ -669,6 +669,7 @@ div.social-icons > div.correo p, i{
 .rise{
     width: 100px;
     height: 100px;
+    display: block;
     position: fixed;
     top: 900px;
     right: 0;
@@ -686,17 +687,16 @@ div.social-icons > div.correo p, i{
 /* =================================================================== */
 
 /* ************* media queries ********************************************** */
+
 @media screen and (max-width: 1100px){
     section.contact > div.form > form{
         width:  50%;
     }
-
-}
-/* @media screen and (max-width: 915px){
-    section.blog{
-        margin-top:  10vh;
+    .rise{
+        display: none;
     }
-} */
+}
+
 @media screen and (max-width: 900px){/* menos de 900 px */
     header > h1{
         font-size: 3.8rem;
