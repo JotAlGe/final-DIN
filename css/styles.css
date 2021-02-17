@@ -167,7 +167,7 @@ article.links > div p{
     color:  rgba(114, 10, 2, 0.8);
 }
 article.links > div i{
-    color: #720a02;
+    color: rgba(114, 10, 2, 0.8);
 }
 /************************* animación************************* */
 @keyframes slider{
@@ -664,6 +664,27 @@ div.social-icons > div.correo{
 div.social-icons > div.correo p, i{
     color:  white;
 }
+
+/* ================ button rise ===================== */
+.rise{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 900px;
+    right: 0;
+}
+.rise__link{
+    width: 100%;
+    height: 100%;
+}
+.rise__link__icon{
+    color: black;
+    font-size: 3em;
+    cursor: pointer;
+    color: rgba(114, 10, 2, 0.8);
+}
+/* =================================================================== */
+
 /* ************* media queries ********************************************** */
 @media screen and (max-width: 1100px){
     section.contact > div.form > form{
