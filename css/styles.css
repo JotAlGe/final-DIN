@@ -665,7 +665,6 @@ div.social-icons > div.correo p, i{
     color:  white;
 }
 
-/* ================ button rise ===================== */
 .rise{
     width: 100px;
     height: 100px;
@@ -684,7 +683,40 @@ div.social-icons > div.correo p, i{
     cursor: pointer;
     color: rgba(114, 10, 2, 0.8);
 }
-/* =================================================================== */
+/* lista  go*/
+.go{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 200px;
+    list-style: none;
+    transition: all .5s linear;
+    opacity: 0;
+}
+.go__item{
+    margin-bottom: .1em;
+}
+.go__item:hover{
+    background-color: rgba(0, 196, 204, .2);
+}
+.go__item__link{
+    text-decoration: none;
+    color: rgba(114, 10, 2, 0.8);
+    font-size: 1.5em;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+.rise:hover > .go{
+    display: block;
+    transform: translate(-6em, -10em);
+    -moz-transform: translate(-6em, -10em);
+    opacity: 1;
+}
+    
+.rise:hover i{
+    opacity: .8;
+}
 
 /* ************* media queries ********************************************** */
 
