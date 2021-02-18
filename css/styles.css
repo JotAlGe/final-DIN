@@ -105,7 +105,7 @@ div.slider > div.uno{
     z-index:  -1;
 }
 div.slider > div.dos{
-    background-image: url("../img/2.jpg");
+    background-image: url("../img/SM-horizontal.jpg");
     background-repeat:  no-repeat;
     background-size:  cover;
     background-position:  center;
@@ -564,6 +564,7 @@ div.about > div.about-content > div.item-content{
 }
 .cite{
     color: rgba(114, 10, 2, 0.8);
+    /* color: #720a02cc; */
     font-weight: bold;
 }
     
@@ -677,7 +678,20 @@ div.social-icons > div.correo{
 div.social-icons > div.correo p, i{
     color:  white;
 }
-
+.icons__facebook:hover{
+    color: #3b5998;
+}
+.icons__whatsapp:hover{
+    color: #00bb2d;
+}
+.icons__instagram:hover{
+    color: #D83065;
+}
+.correo:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+/* ========================== */
 .rise{
     width: 100px;
     height: 100px;
