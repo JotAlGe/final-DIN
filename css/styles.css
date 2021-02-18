@@ -552,13 +552,25 @@ div.about > div.about-content > div.item-content{
     position:  relative;
 
     display:  flex;
+    flex-direction: column;
     justify-content:  center;
     align-items:  center;
     padding-bottom:  5%;
 }
+.blockquote{
+    color: rgba(114, 10, 2, 0.8);
+    z-index: 100;
+    font-size: 3em;
+}
+.cite{
+    color: rgba(114, 10, 2, 0.8);
+    font-weight: bold;
+}
+    
 div.about-content > div.item-content > p{
     color:rgba(114, 10, 2, 0.8);
     line-height:  3;
+    font-size: 1.1em;
 }
 div.about-content > div.item-content > div.img{
     width:  100%;
