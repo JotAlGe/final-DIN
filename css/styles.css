@@ -670,10 +670,15 @@ div.icons > i{
 }
 div.social-icons > div.correo{
     width:  50%;
-    font-size:  1.2em;
+    font-size:  1.1em;
     cursor:  pointer;
 }
-
+.myName__paragraph{
+    color: #fff;
+    font-family: 'Amatic SC';
+    font-weight: bold;
+    font-size: 1.1em;
+}
 
 div.social-icons > div.correo p, i{
     color:  white;
@@ -836,5 +841,7 @@ div.social-icons > div.correo p, i{
     div.social-icons > div.correo p, i{
         font-size:  1em;
     }
+    .correo__icons{
+        display: none;
+    }   
 }
-
